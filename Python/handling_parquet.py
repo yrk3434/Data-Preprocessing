@@ -1,13 +1,14 @@
+import pyarrow as pa
 import pyarrow.parquet as pq
 import pyarrow.dataset as ds
 
 '''
-save data with partitioon
+save data with partition
 '''
 table = pa.Table.from_pandas(pandas_df)
 pq.write_to_dataset(
 table,
-root_path
+root_path,
 partiton_cols
 )
 
