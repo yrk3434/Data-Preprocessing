@@ -2,9 +2,9 @@
 실행파일 내부
 '''
 
-import argparser
+import argparse
 
-parser = argparser.ArgumentParser()
+parser = argparse.ArgumentParser()
 parser.add_argument("--input1", type=str, default = 'myinput')
 args = parser.parse_args()
 
