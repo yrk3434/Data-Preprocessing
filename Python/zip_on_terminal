@@ -1,0 +1,2 @@
+# zip 명령어 안될 때
+tar -a -c -f output.zip myfile.txt
